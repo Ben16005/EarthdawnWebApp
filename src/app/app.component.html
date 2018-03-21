@@ -1,0 +1,17 @@
+<body class="ed-container">
+  <header class="ed-header">{{ currentCharacter.name }} - {{ currentCharacter.player }}</header>
+  <div class="ed-body">
+    <main class="ed-content">
+      <ng-container>
+        <button class="accordion">Character</button>
+        <div class="panel">
+          <div>Name: {{ currentCharacter.name }}</div>
+          <div>Age: {{ currentCharacter.age }}</div>
+        </div>
+      </ng-container>
+    </main>
+    <nav class="ed-nav">NavBar</nav>
+    <aside class="ed-ads">Ads?</aside>
+  </div>
+  <footer>This is the footer</footer>
+</body>

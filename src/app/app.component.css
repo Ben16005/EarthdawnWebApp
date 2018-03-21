@@ -1,0 +1,58 @@
+.ed-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.ed-body {
+  display: flex;
+  flex: 1;
+}
+
+.ed-content {
+  flex: 1;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.ed-nav,
+.ed-ads {
+  /* 12em is the width of the columns */
+  flex: 0 0 12em;
+  background: red;
+}
+
+.ed-nav {
+  /* put the nav on the left */
+  order: -1;
+  background: lightblue;
+  border-right: 1px solid;
+}
+
+.ed-header {
+  text-align: center;
+  border-bottom: 1px solid;
+  width: 100%;
+}
