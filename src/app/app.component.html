@@ -2,16 +2,13 @@
   <header class="ed-header">{{ currentCharacter.name }} - {{ currentCharacter.player }}</header>
   <div class="ed-body">
     <main class="ed-content">
-      <ng-container>
-        <button class="accordion">Character</button>
-        <div class="panel">
-          <div>Name: {{ currentCharacter.name }}</div>
-          <div>Age: {{ currentCharacter.age }}</div>
-        </div>
-      </ng-container>
+      <router-outlet></router-outlet>
     </main>
-    <nav class="ed-nav">NavBar</nav>
-    <aside class="ed-ads">Ads?</aside>
+    <nav class="ed-nav">
+      <button routerLink="/welcome">Welcome</button>
+      <button routerLink="/charactersheet">Character Sheet</button>
+    </nav>
+    <aside class="ed-ads">Not sure what goes here - something should go here, maybe. Not sold yet. Think about it later, and if you have an opinion, maybe you should voice it.</aside>
   </div>
   <footer>This is the footer</footer>
 </body>
