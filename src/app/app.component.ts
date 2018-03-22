@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Character } from './character/character';
+import { Character } from './shared/structs/character';
 import { OnInit } from '@angular/core';
 
 @Component({

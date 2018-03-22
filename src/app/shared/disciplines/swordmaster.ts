@@ -1,5 +1,5 @@
-import { Discipline } from '../character/discipline';
-import { Talent } from '../character/talent';
+import { Discipline } from '../structs/discipline';
+import { Talent } from '../structs/talent';
 import { avoidBlow, maneuver, meleeWeapons, taunt, woundBalance } from '../library/disciplineTalents';
 import { karmaRitual, durability } from '../library/staticTalents';
 

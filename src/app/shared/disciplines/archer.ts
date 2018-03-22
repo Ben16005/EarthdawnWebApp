@@ -1,5 +1,5 @@
-import { Discipline } from '../character/discipline';
-import { Talent } from '../character/talent';
+import { Discipline } from '../structs/discipline';
+import { Talent } from '../structs/talent';
 import { avoidBlow, directionArrow, missileWeapons, mysticAim, trueShot, sprint,
 throwingWeapons, flameArrow, woundBalance, meleeWeapons, threadWeavingSpecial,
 firstImpression, stoppingAim, bankShot, speakLanguage, anticipateBlow, callArrow,
