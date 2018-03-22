@@ -1,8 +1,10 @@
 export class ShortTalent {
     name: string;
     attribute: string;
+    reqKarma: boolean;
     action: boolean;
     strain: number;
+    rankMod: boolean;
 }
 
 export class Talent {
@@ -18,13 +20,12 @@ export class Talent {
     karma: boolean;
     action: boolean;
 
-    constructor(briefTalent: ShortTalent, circle: number, discipline: boolean, karma: boolean) {
+    constructor(briefTalent: ShortTalent, circle: number, discipline: boolean) {
         this.name = briefTalent.name;
         this.attribute = briefTalent.attribute;
         this.action = briefTalent.action;
         this.strain = briefTalent.strain;
         this.circle = circle;
-        this.karma = karma;
         this.discipline = discipline;
     }
 }

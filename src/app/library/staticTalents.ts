@@ -4,7 +4,7 @@ export const durability: Talent = {
     name: 'Durability',
     attribute: '',
     strain: 0,
-    circle: 1,
+    circle: 3,
     discipline: false,
     karma: false,
     action: false
