@@ -1,4 +1,4 @@
-import { ShortTalent } from '../structs/talent';
+import { ShortTalent } from '../../models/talent';
 
 export const abateCurse: ShortTalent = {
     name: 'Abate Curse',

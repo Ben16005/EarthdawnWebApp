@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Character } from '../shared/structs/character';
+import { Character } from '../models/character';
 
 @Component({
     templateUrl: './charactersheet.component.html',

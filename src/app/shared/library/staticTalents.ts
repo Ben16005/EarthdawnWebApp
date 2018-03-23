@@ -1,4 +1,4 @@
-import { Talent } from '../structs/talent';
+import { Talent } from '../../models/talent';
 
 export const durability: Talent = {
     name: 'Durability',
