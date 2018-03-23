@@ -1,13 +1,14 @@
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Components
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
+import { CharacterComponent } from './character/character.component';
 import { CharacterSheetComponent } from './charactersheet/charactersheet.component';
 import { StatsComponent } from './charactersheet/stats/stats.component';
 import { TalentsComponent } from './charactersheet/talents/talents.component';
@@ -19,11 +20,13 @@ import { FormsModule } from '@angular/forms';
 import { CharacterService } from './services/character.service';
 import { EditModeService } from './services/editmode.service';
 
-const routes = [
+const routes: Routes = [
   { path: 'charactersheet', component: CharacterSheetComponent },
   { path: 'printsheet', component: PrintSheetComponent },
   { path: 'welcome', component: WelcomeComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: 'character/:id', component: CharacterComponent }
+  // { path: '**', component: PageNoteFoundComponent }
 ];
 
 @NgModule({
@@ -37,11 +40,12 @@ const routes = [
   declarations: [
     AppComponent,
     WelcomeComponent,
+    CharacterComponent,
     CharacterSheetComponent,
-    StatsComponent,
-    TalentsComponent,
     AsideLeftComponent,
-    PrintSheetComponent
+    PrintSheetComponent,
+    StatsComponent,
+    TalentsComponent
   ],
   providers: [
     CharacterService,

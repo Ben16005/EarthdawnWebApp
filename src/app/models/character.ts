@@ -4,6 +4,7 @@ import { Talent } from './talent';
 import { Stat } from './stat';
 
 export class Character {
+    public id: string;
     public name: string;
     public player: string;
     public age: number;
