@@ -1,7 +1,17 @@
 <ng-container>
+    <ngb-tabset justify="fill">
+        <ngb-tab title="Stats">
+            <ng-template ngbTabContent>Dex, STR, ETC</ng-template>
+        </ngb-tab>
+        <ngb-tab title="Talents">
+            <ng-template ngbTabContent>Avoid Blow</ng-template>
+        </ngb-tab>
+    </ngb-tabset>
     <button class="accordion">Character</button>
     <div class="panel">
-        <div>Name: {{ currentCharacter.name }}</div>
-        <div>Age: {{ currentCharacter.age }}</div>
+        <!-- <div>Name: {{ currentCharacter.name }}</div>
+        <div>Age: {{ currentCharacter.age }}</div> -->
+        <div>Name: Bob</div>
+        <div>Age: 25</div>
     </div>
 </ng-container>

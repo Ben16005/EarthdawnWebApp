@@ -17,7 +17,7 @@
 .ed-ads {
   /* 12em is the width of the columns */
   flex: 0 0 12em;
-  background: red;
+  background:lightcyan
 }
 
 .ed-nav {

@@ -11,17 +11,17 @@ import { OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Earthdawn Character Sheet';
 
-  currentCharacter = new Character('Suroshi');
+  public selectedCharacter = new Character('Suroshi');
 
   ngOnInit() {
     this.loadCharacterInformation();
   }
 
   loadCharacterInformation() {
-    this.currentCharacter.age = 18;
-    this.currentCharacter.gender = 'M';
-    this.currentCharacter.height = '6\'1\"';
-    this.currentCharacter.weight = 170;
-    this.currentCharacter.player = 'Ben';
+    this.selectedCharacter.age = 18;
+    this.selectedCharacter.gender = 'M';
+    this.selectedCharacter.height = '6\'1\"';
+    this.selectedCharacter.weight = 170;
+    this.selectedCharacter.player = 'Ben';
   }
 }

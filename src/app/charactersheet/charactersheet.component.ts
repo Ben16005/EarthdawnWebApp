@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Character } from '../shared/structs/character';
 
 @Component({
     templateUrl: './charactersheet.component.html',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharacterSheetComponent implements OnInit {
     public pageTitle2: string = 'Character Sheet';
+
+// @Input() selectedCharacter: Character;
 
 ngOnInit() {
     const acc = document.getElementsByClassName('accordion');
