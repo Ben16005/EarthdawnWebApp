@@ -6,3 +6,31 @@ li {
 div.panel-heading {
    font-size: x-large;
 }
+
+.nav-tabs {
+    background: white;
+}
+
+.ed-card {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    margin: 10px 10px 10px 10px;
+    line-height: 3;
+    text-align: left;
+    padding: 2rem;
+    width: 300px;
+}
+
+.ed-talent {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background: white;
+    line-height: 2;
+    text-align: left;
+}
+
+.panel-primary {
+    height: 100%;
+}

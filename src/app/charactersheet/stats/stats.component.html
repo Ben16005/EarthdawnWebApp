@@ -1,0 +1,28 @@
+<div style="display: flex; flex-direction: row; flex-wrap: wrap">
+    <div>
+        <div *ngFor="let stat of characterStats" class="ed-card w3-card">
+            <p>{{ stat.base }}</p>
+            <p>{{ stat.name }}</p>
+            <p>
+                <b>{{ getStep(stat.base) }}</b>
+            </p>
+        </div>
+    </div>
+    <div>
+        <div *ngFor="let stat of characterDefenses" class="ed-card w3-card">
+            <p>{{ stat.name }}</p>
+            <p>
+                <b>{{ getStep(stat.base) }}</b>
+            </p>
+        </div>
+    </div>
+    <div>
+        <div *ngFor="let stat of characterOther" class="ed-card w3-card">
+            <p>{{ stat.base }}</p>
+            <p>{{ stat.name }}</p>
+            <p>
+                <b>{{ getStep(stat.base) }}</b>
+            </p>
+        </div>
+    </div>
+</div>

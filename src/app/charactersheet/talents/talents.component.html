@@ -1,0 +1,10 @@
+<div *ngFor="let discipline of disciplines" style="display: flex; flex-direction: column; flex-wrap: wrap">
+    <div class="w3-card ed-talent">{{ discipline.name }}</div>
+    <div *ngFor="let talent of discipline.talents" class="w3-card ed-talent">
+        <p>{{ talent.circle }}</p>
+        <p>{{ talent.name }}</p>
+        <p>{{ talent.rank }}</p>
+        <p>{{ talent.attribute }}</p>
+        <p>{{ talent.step }}</p>
+    </div>
+</div>

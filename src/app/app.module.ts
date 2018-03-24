@@ -7,13 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { CharacterSheetComponent } from './charactersheet/charactersheet.component';
+import { StatsComponent } from './charactersheet/stats/stats.component';
+import { TalentsComponent } from './charactersheet/talents/talents.component';
 import { AsideLeftComponent } from './navigation-asideleft/asideleft.component';
 
 const routes = [
   { path: 'charactersheet', component: CharacterSheetComponent },
   { path: 'welcome', component: WelcomeComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-  // { path: '**', component: PageNoteFoundComponent }
 ];
 
 @NgModule({
@@ -27,6 +28,8 @@ const routes = [
     AppComponent,
     WelcomeComponent,
     CharacterSheetComponent,
+    StatsComponent,
+    TalentsComponent,
     AsideLeftComponent
   ],
   providers: [],

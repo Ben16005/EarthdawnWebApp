@@ -1,12 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Character } from '../models/character';
-import { Stat } from '../models/stat';
+import { Character } from '../../models/character';
+import { Stat } from '../../models/stat';
 
 @Component({
-  templateUrl: './charactersheet.component.html',
-  styleUrls: ['./charactersheet.component.css']
+  selector: 'pm-stats',
+  templateUrl: './stats.component.html',
+  styleUrls: ['./stats.component.css']
 })
-export class CharacterSheetComponent implements OnInit {
+export class StatsComponent implements OnInit {
   @Input() selectedCharacter;
 
   characterStats: Stat[] = [
@@ -24,20 +25,20 @@ export class CharacterSheetComponent implements OnInit {
     new Stat('Spell Defense', 20),
     new Stat('Mystic Armor', 20),
     new Stat('Mystic Threshold', 13),
-    new Stat('Social Defense', 14),
+    new Stat('Social Defense', 14)
   ];
 
   characterOther: Stat[] = [
     new Stat('Karma', 50),
     new Stat('Unconscious', 12),
     new Stat('Death', 13),
-    new Stat('Recovery Tests', 13),
+    new Stat('Recovery Tests', 13)
   ];
 
   ngOnInit() {}
 
   // Placeholder
-  getStep (value: number) {
+  getStep(value: number) {
     return value / 2;
   }
 }
