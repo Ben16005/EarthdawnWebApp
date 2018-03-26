@@ -1,0 +1,11 @@
+.ed-talent-container {
+  margin: 10px 10px 10px 10px;
+}
+
+#ed-talent-modal {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  margin-left: 0px;
+  margin-top: -150px;
+}

@@ -9,10 +9,12 @@ import { WelcomeComponent } from './home/welcome.component';
 import { CharacterSheetComponent } from './charactersheet/charactersheet.component';
 import { StatsComponent } from './charactersheet/stats/stats.component';
 import { TalentsComponent } from './charactersheet/talents/talents.component';
-import { AsideLeftComponent } from './navigation-asideleft/asideleft.component';
+import { AsideLeftComponent } from './aside-left/asideleft.component';
+import { PrintSheetComponent } from './printsheet/printsheet.component';
 
 const routes = [
   { path: 'charactersheet', component: CharacterSheetComponent },
+  { path: 'printsheet', component: PrintSheetComponent },
   { path: 'welcome', component: WelcomeComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
 ];
@@ -30,7 +32,8 @@ const routes = [
     CharacterSheetComponent,
     StatsComponent,
     TalentsComponent,
-    AsideLeftComponent
+    AsideLeftComponent,
+    PrintSheetComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@ import { avoidBlow, maneuver, meleeWeapons, taunt, woundBalance } from '../libra
 import { karmaRitual, durability } from '../library/staticTalents';
 
 export const swordMaster: Discipline = {
-    name: 'archer',
+    name: 'swordMaster',
     circle: 1,
     talents: [
         karmaRitual,

@@ -1,10 +1,44 @@
-<div *ngFor="let discipline of disciplines" style="display: flex; flex-direction: column; flex-wrap: wrap">
-    <div class="w3-card ed-talent">{{ discipline.name }}</div>
-    <div *ngFor="let talent of discipline.talents" class="w3-card ed-talent">
-        <p>{{ talent.circle }}</p>
-        <p>{{ talent.name }}</p>
-        <p>{{ talent.rank }}</p>
-        <p>{{ talent.attribute }}</p>
-        <p>{{ talent.step }}</p>
+<div class="flex-container">
+    <div class="flex-stretch ed-talent-container" *ngFor="let discipline of disciplines">
+        <div class="w3-card ed-talent ed-discipline">{{ discipline.name }}</div>
+        <table class="ed-talent">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <div *ngFor="let talent of discipline.talents" data-toggle="modal" data-target="#ed-talent-modal">
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <!-- <p>{{ talent.circle }}</p>
+            <p>{{ talent.name }}</p>
+            <p>{{ talent.rank }}</p>
+            <p>{{ talent.attribute }}</p>
+            <p>{{ talent.step }}</p> -->
+            </div>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="ed-talent-modal" class="modal fade ed-modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
     </div>
 </div>
