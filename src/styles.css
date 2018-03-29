@@ -22,14 +22,6 @@ div.panel-heading {
   padding: 2rem;
 }
 
-.ed-talent {
-  display: flex;
-  justify-content: space-between;
-  background: white;
-  line-height: 2;
-  text-align: left;
-}
-
 .flex-stretch {
   flex: 1;
   text-align: center;

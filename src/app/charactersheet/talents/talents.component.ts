@@ -4,6 +4,8 @@ import { Stat } from '../../models/stat';
 import { archer } from '../../shared/disciplines/archer';
 import { airSailor } from '../../shared/disciplines/airsailor';
 import { Discipline } from '../../models/discipline';
+import { Talent } from '../../models/talent';
+import { illusionist } from '../../shared/disciplines/illusionist';
 
 @Component({
   selector: 'pm-talents',
@@ -13,9 +15,17 @@ import { Discipline } from '../../models/discipline';
 export class TalentsComponent implements OnInit {
   @Input() selectedCharacter;
 
-  disciplines: Discipline[] = [
-      archer, airSailor
-  ];
+  disciplines: Discipline[] = [illusionist, archer, airSailor];
 
   ngOnInit() {}
+
+  getKarma(talent: Talent) {
+    if (talent.discipline) {
+      return 'D';
+    } else if (talent.karma) {
+      return 'K';
+    } else {
+      return 'N';
+    }
+  }
 }

@@ -1,24 +1,21 @@
 <div class="flex-container">
     <div class="flex-stretch ed-talent-container" *ngFor="let discipline of disciplines">
-        <div class="w3-card ed-talent ed-discipline">{{ discipline.name }}</div>
+        <div id="ed-discipline" class="ed-talent">{{ discipline.name }}</div>
         <table class="ed-talent">
             <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
+                <th>Name</th>
+                <th class="table-center">Rank</th>
+                <th class="table-center">Attribute</th>
+                <th class="table-center">Step</th>
             </tr>
-            <div *ngFor="let talent of discipline.talents" data-toggle="modal" data-target="#ed-talent-modal">
-                <tr>
-                    <td>Alfreds Futterkiste</td>
-                    <td>Maria Anders</td>
-                    <td>Germany</td>
+            <ng-container *ngFor="let talent of discipline.talents">
+                <tr data-toggle="modal" data-target="#ed-talent-modal">
+                    <td class="ed-action-icon" id="talent-name">{{ talent.name }} ({{ getKarma(talent) }})</td>
+                    <td class="table-center">{{ talent.rank }}</td>
+                    <td class="table-center">{{ talent.attribute }}</td>
+                    <td class="table-center">{{ talent.step }}</td>
                 </tr>
-                <!-- <p>{{ talent.circle }}</p>
-            <p>{{ talent.name }}</p>
-            <p>{{ talent.rank }}</p>
-            <p>{{ talent.attribute }}</p>
-            <p>{{ talent.step }}</p> -->
-            </div>
+            </ng-container>
         </table>
     </div>
 </div>

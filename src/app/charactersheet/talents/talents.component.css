@@ -9,3 +9,36 @@
   margin-left: 0px;
   margin-top: -150px;
 }
+
+#ed-discipline {
+  text-align: center;
+}
+
+#talent-name {
+  text-align: left;
+}
+
+.ed-talent {
+  width: 100%;
+  background: white;
+  line-height: 2;  
+}
+
+.table-center {
+  text-align: center;
+}
+
+.ed-talent td,
+.ed-talent th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.ed-talent tr:nth-child(even){background-color: #f2f2f2;}
+
+/* .ed-action-icon {
+  background: './assets/images/action.png';
+  height: 5px;
+  width: 5px;
+  display: block;
+  /* Other styles here */ 

@@ -23,6 +23,7 @@ export class Talent {
     constructor(briefTalent: ShortTalent, circle: number, discipline: boolean) {
         this.name = briefTalent.name;
         this.attribute = briefTalent.attribute;
+        this.karma = briefTalent.reqKarma;
         this.action = briefTalent.action;
         this.strain = briefTalent.strain;
         this.circle = circle;
