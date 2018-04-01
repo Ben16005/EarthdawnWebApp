@@ -4,8 +4,18 @@
       <router-outlet></router-outlet>
     </main>
     <nav class="ed-nav">
-      <pm-aside-left></pm-aside-left>
+      <ul class="nav nav-pills nav-stacked">
+        <pm-aside-left></pm-aside-left>
+        <li>
+          <div>Edit Mode:
+            <input type="checkbox" [(ngModel)]="editMode">
+          </div>
+        </li>
+      </ul>
     </nav>
   </div>
-  <footer>This is the footer</footer>
+  <footer>
+    <div>Current Value: {{ currentValue }}</div>
+    <button (click)="increaseValue()">Increase Value</button>
+  </footer>
 </body>

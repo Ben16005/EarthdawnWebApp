@@ -1,28 +1,28 @@
 <div class="flex-container">
     <div class="flex-stretch">
-        <div *ngFor="let stat of characterStats" class="ed-card w3-card" data-toggle="modal" data-target="#ed-stats-modal">
-            <p>{{ stat.base }}</p>
-            <p>{{ stat.name }}</p>
-            <p>
+        <div *ngFor="let stat of characterStats" class="ed-card w3-card">
+            <input type="text" class="form-control" placeholder="{{ stat.base }}" style="width: 30%">
+            <div data-toggle="modal" data-target="#ed-stats-modal">{{ stat.name }}</div>
+            <div>
                 <b>{{ getStep(stat.base) }}</b>
-            </p>
+            </div>
         </div>
     </div>
     <div class="flex-stretch">
         <div *ngFor="let stat of characterDefenses" class="ed-card w3-card" data-toggle="modal" data-target="#ed-stats-modal">
-            <p>{{ stat.name }}</p>
-            <p>
+            <div>{{ stat.name }}</div>
+            <div>
                 <b>{{ getStep(stat.base) }}</b>
-            </p>
+            </div>
         </div>
     </div>
     <div class="flex-stretch">
         <div *ngFor="let stat of characterOther" class="ed-card w3-card" data-toggle="modal" data-target="#ed-stats-modal">
-            <p>{{ stat.base }}</p>
-            <p>{{ stat.name }}</p>
-            <p>
+            <div>{{ stat.base }}</div>
+            <div>{{ stat.name }}</div>
+            <div>
                 <b>{{ getStep(stat.base) }}</b>
-            </p>
+            </div>
         </div>
     </div>
 </div>

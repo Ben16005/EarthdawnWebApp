@@ -1,9 +1,11 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+// Components
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './home/welcome.component';
 import { CharacterSheetComponent } from './charactersheet/charactersheet.component';
@@ -11,6 +13,11 @@ import { StatsComponent } from './charactersheet/stats/stats.component';
 import { TalentsComponent } from './charactersheet/talents/talents.component';
 import { AsideLeftComponent } from './aside-left/asideleft.component';
 import { PrintSheetComponent } from './printsheet/printsheet.component';
+import { FormsModule } from '@angular/forms';
+
+// Services
+import { CharacterService } from './services/character.service';
+import { EditModeService } from './services/editmode.service';
 
 const routes = [
   { path: 'charactersheet', component: CharacterSheetComponent },
@@ -24,7 +31,8 @@ const routes = [
     BrowserModule,
     HttpModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   declarations: [
     AppComponent,
@@ -35,7 +43,10 @@ const routes = [
     AsideLeftComponent,
     PrintSheetComponent
   ],
-  providers: [],
+  providers: [
+    CharacterService,
+    EditModeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

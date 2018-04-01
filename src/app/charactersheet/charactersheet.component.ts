@@ -8,6 +8,7 @@ import { Stat } from '../models/stat';
 })
 export class CharacterSheetComponent implements OnInit {
   @Input() selectedCharacter;
+  @Input() editMode: boolean;
 
   characterStats: Stat[] = [
     new Stat('Strength', 12),
