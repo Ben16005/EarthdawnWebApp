@@ -1,21 +1,25 @@
-import { Component } from '@angular/core';
-import { Character } from './models/character';
-import { OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { CharacterService } from './services/character.service';
+import { Character } from './models/character';
+import { EditModeService } from './services/editmode.service';
 
 @Component({
   selector: 'pm-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnChanges {
   title = 'Earthdawn Character Sheet';
   currentValue: number;
   editMode = false;
+  editModeGlobal = false;
 
   public selectedCharacter = new Character('Suroshi');
 
-  constructor(private _characterService: CharacterService) {}
+  constructor(
+    private _characterService: CharacterService,
+    private _editMode: EditModeService
+  ) {}
 
   ngOnInit() {
     this.loadCharacterInformation();
@@ -25,6 +29,11 @@ export class AppComponent implements OnInit {
   increaseValue() {
     this._characterService.setCurrentCharacter(this.currentValue + 1);
     this.currentValue = this._characterService.getCurrentCharacter();
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this._editMode.setEditMode(this.editMode);
+    this.editModeGlobal = this._editMode.getEditMode();
   }
 
   loadCharacterInformation() {
