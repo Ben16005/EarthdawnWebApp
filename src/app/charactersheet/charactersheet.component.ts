@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Character } from '../models/character';
 import { Stat } from '../models/stat';
+import { EditModeService } from '../services/editmode.service';
 
 @Component({
   templateUrl: './charactersheet.component.html',
@@ -8,7 +9,9 @@ import { Stat } from '../models/stat';
 })
 export class CharacterSheetComponent implements OnInit {
   @Input() selectedCharacter;
-  @Input() editMode: boolean;
+  editMode: boolean;
+
+  constructor(private editService: EditModeService) {}
 
   characterStats: Stat[] = [
     new Stat('Strength', 12),
@@ -25,20 +28,24 @@ export class CharacterSheetComponent implements OnInit {
     new Stat('Spell Defense', 20),
     new Stat('Mystic Armor', 20),
     new Stat('Mystic Threshold', 13),
-    new Stat('Social Defense', 14),
+    new Stat('Social Defense', 14)
   ];
 
   characterOther: Stat[] = [
     new Stat('Karma', 50),
     new Stat('Unconscious', 12),
     new Stat('Death', 13),
-    new Stat('Recovery Tests', 13),
+    new Stat('Recovery Tests', 13)
   ];
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.editService.currentMode.subscribe(
+      futureMode => (this.editMode = futureMode)
+    );
+  }
 
   // Placeholder
-  getStep (value: number) {
+  getStep(value: number) {
     return value / 2;
   }
 }

@@ -6,6 +6,7 @@ import { airSailor } from '../../shared/disciplines/airsailor';
 import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { illusionist } from '../../shared/disciplines/illusionist';
+import { EditModeService } from '../../services/editmode.service';
 
 @Component({
   selector: 'pm-talents',
@@ -17,7 +18,22 @@ export class TalentsComponent implements OnInit {
 
   disciplines: Discipline[] = [illusionist, archer, airSailor];
 
-  ngOnInit() {}
+  constructor(private editService: EditModeService) {}
+
+  editMode: boolean;
+  ngOnInit() {
+    this.editService.currentMode.subscribe(
+      futureMode => (this.editMode = futureMode)
+    );
+  }
+
+  increaseTalent(talent: Talent) {
+    talent.rankSave = (talent.rankSave >= 15) ? 15 : talent.rankSave + 1;
+  }
+
+  decreaseTalent(talent: Talent) {
+    talent.rankSave = (talent.rankSave <= 0) ? 0 : talent.rankSave - 1;
+  }
 
   getKarma(talent: Talent) {
     if (talent.discipline) {

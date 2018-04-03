@@ -13,7 +13,8 @@ export class Talent {
     attribute: string;
     strain: number;
 
-    rank?: number;
+    rank? = 0;
+    rankSave? = 0;
     rankMod?: number;
     stepMod?: number;
     discipline: boolean;

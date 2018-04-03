@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Character } from '../../models/character';
 import { Stat } from '../../models/stat';
+import { EditModeService } from '../../services/editmode.service';
 
 @Component({
   selector: 'pm-stats',
@@ -35,7 +36,14 @@ export class StatsComponent implements OnInit {
     new Stat('Recovery Tests', 13)
   ];
 
-  ngOnInit() {}
+  constructor(private editService: EditModeService) {}
+
+  editMode: boolean;
+  ngOnInit() {
+    this.editService.currentMode.subscribe(
+      futureMode => (this.editMode = futureMode)
+    );
+  }
 
   // Placeholder
   getStep(value: number) {

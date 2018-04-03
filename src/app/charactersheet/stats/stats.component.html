@@ -1,7 +1,7 @@
 <div class="flex-container">
     <div class="flex-stretch">
         <div *ngFor="let stat of characterStats" class="ed-card w3-card">
-            <input type="text" class="form-control" placeholder="{{ stat.base }}" style="width: 30%">
+            <input *ngIf="editMode" type="text" class="form-control" placeholder="{{ stat.base }}" style="width: 30%">
             <div data-toggle="modal" data-target="#ed-stats-modal">{{ stat.name }}</div>
             <div>
                 <b>{{ getStep(stat.base) }}</b>

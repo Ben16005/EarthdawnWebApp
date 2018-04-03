@@ -1,15 +1,14 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class EditModeService {
-  editMode: boolean;
+
+  private editMode = new BehaviorSubject<boolean>(false);
+  currentMode = this.editMode.asObservable();
 
   // Get Current Character
-  getEditMode() {
-    return this.editMode;
-  }
-  // Set Current Character
-  setEditMode(newValue: boolean) {
-    this.editMode = newValue;
+  changeEditMode(futureMode: boolean) {
+    this.editMode.next(futureMode);
   }
 }

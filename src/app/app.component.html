@@ -8,7 +8,7 @@
         <pm-aside-left></pm-aside-left>
         <li>
           <div>Edit Mode:
-            <input type="checkbox" [(ngModel)]="editMode">
+            <input type="checkbox" [(ngModel)]="editMode" (ngModelChange)="update($event)">
           </div>
         </li>
       </ul>

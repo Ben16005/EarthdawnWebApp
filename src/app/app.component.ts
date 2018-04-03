@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CharacterService } from './services/character.service';
 import { Character } from './models/character';
 import { EditModeService } from './services/editmode.service';
@@ -8,32 +8,30 @@ import { EditModeService } from './services/editmode.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnChanges {
+export class AppComponent implements OnInit {
   title = 'Earthdawn Character Sheet';
   currentValue: number;
   editMode = false;
-  editModeGlobal = false;
 
   public selectedCharacter = new Character('Suroshi');
 
   constructor(
-    private _characterService: CharacterService,
-    private _editMode: EditModeService
+    private characterService: CharacterService,
+    private editService: EditModeService
   ) {}
 
   ngOnInit() {
     this.loadCharacterInformation();
-    this.currentValue = this._characterService.getCurrentCharacter();
+    this.currentValue = this.characterService.getCurrentCharacter();
   }
 
   increaseValue() {
-    this._characterService.setCurrentCharacter(this.currentValue + 1);
-    this.currentValue = this._characterService.getCurrentCharacter();
+    this.characterService.setCurrentCharacter(this.currentValue + 1);
+    this.currentValue = this.characterService.getCurrentCharacter();
   }
 
-  ngOnChanges(changes: SimpleChanges) {
-    this._editMode.setEditMode(this.editMode);
-    this.editModeGlobal = this._editMode.getEditMode();
+  update(value) {
+    this.editService.changeEditMode(value);
   }
 
   loadCharacterInformation() {
