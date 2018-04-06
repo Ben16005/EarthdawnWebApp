@@ -39,10 +39,23 @@ export class StatsComponent implements OnInit {
   constructor(private editService: EditModeService) {}
 
   editMode: boolean;
+  ranks: number;
+
   ngOnInit() {
     this.editService.currentMode.subscribe(
       futureMode => (this.editMode = futureMode)
     );
+    this.editService.currentRanks.subscribe(
+      futureRanks => (this.ranks = futureRanks)
+    );
+  }
+
+  increaseStat() {
+
+  }
+
+  decreaseStat() {
+
   }
 
   // Placeholder

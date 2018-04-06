@@ -10,6 +10,7 @@ import { EditModeService } from '../services/editmode.service';
 export class CharacterSheetComponent implements OnInit {
   @Input() selectedCharacter;
   editMode: boolean;
+  ranks: number;
 
   constructor(private editService: EditModeService) {}
 
@@ -41,6 +42,9 @@ export class CharacterSheetComponent implements OnInit {
   ngOnInit() {
     this.editService.currentMode.subscribe(
       futureMode => (this.editMode = futureMode)
+    );
+    this.editService.currentRanks.subscribe(
+      futureRanks => (this.ranks = futureRanks)
     );
   }
 

@@ -7,8 +7,16 @@ export class EditModeService {
   private editMode = new BehaviorSubject<boolean>(false);
   currentMode = this.editMode.asObservable();
 
-  // Get Current Character
+  private ranks = new BehaviorSubject<number>(0);
+  currentRanks = this.ranks.asObservable();
+
+  // Change Edit Mode
   changeEditMode(futureMode: boolean) {
     this.editMode.next(futureMode);
+  }
+
+  // Increase or Decrease ranks
+  changeRanks(futureRanks: number) {
+    this.ranks.next(futureRanks);
   }
 }

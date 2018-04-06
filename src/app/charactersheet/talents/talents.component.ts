@@ -21,18 +21,46 @@ export class TalentsComponent implements OnInit {
   constructor(private editService: EditModeService) {}
 
   editMode: boolean;
+  ranks: number;
   ngOnInit() {
     this.editService.currentMode.subscribe(
       futureMode => (this.editMode = futureMode)
     );
+    this.editService.currentRanks.subscribe(
+      futureRanks => (this.ranks = futureRanks)
+    );
   }
 
   increaseTalent(talent: Talent) {
-    talent.rankSave = (talent.rankSave >= 15) ? 15 : talent.rankSave + 1;
+    if (talent.rankSave < 15) {
+      talent.rankSave = talent.rankSave + 1;
+      this.editService.changeRanks(this.ranks + this.rankCalculation(talent));
+    }
   }
 
   decreaseTalent(talent: Talent) {
-    talent.rankSave = (talent.rankSave <= 0) ? 0 : talent.rankSave - 1;
+    if (talent.rankSave > 0) {
+      talent.rankSave = talent.rankSave - 1;
+      this.editService.changeRanks(this.ranks - this.rankCalculation(talent));
+    }
+  }
+
+  // Calculates the ranks given the talent and circle
+  rankCalculation(talent: Talent): number {
+    let rankCircle = Math.floor((talent.circle - 1) / 4) - 1;
+
+    // Multiple discipline logic will go here
+
+    if (rankCircle === -1) {
+      rankCircle = 0;
+    }
+
+    let rankTalent = Math.floor((talent.rankSave - 1) / 4);
+
+    if (rankTalent === 0) {
+      rankTalent = 1;
+    }
+    return  rankTalent + rankCircle;
   }
 
   getKarma(talent: Talent) {
