@@ -40,8 +40,8 @@ export class TalentsComponent implements OnInit {
 
   decreaseTalent(talent: Talent) {
     if (talent.rankSave > 0) {
-      talent.rankSave = talent.rankSave - 1;
       this.editService.changeRanks(this.ranks - this.rankCalculation(talent));
+      talent.rankSave = talent.rankSave - 1;
     }
   }
 
