@@ -1305,8 +1305,8 @@ export const directionArrow: ShortTalent = {
     rankMod: false
 };
 
-export const directionSemse: ShortTalent = {
-    name: 'Direction Semse',
+export const directionSense: ShortTalent = {
+    name: 'Direction Sense',
     attribute: 'PER',
     reqKarma: true,
     action: true,
