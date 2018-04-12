@@ -3006,6 +3006,15 @@ export const multiShot: ShortTalent = {
     rankMod: false
 };
 
+export const multiThrow: ShortTalent = {
+    name: 'Multi-Throw',
+    attribute: 'DEX',
+    reqKarma: true,
+    action: true,
+    strain: 1,
+    rankMod: false
+};
+
 export const multiStrike: ShortTalent = {
     name: 'Multi-Strike',
     attribute: 'DEX',
@@ -3411,8 +3420,8 @@ export const rally: ShortTalent = {
     rankMod: false
 };
 
-export const rangePatern: ShortTalent = {
-    name: 'Range Patern',
+export const rangePattern: ShortTalent = {
+    name: 'Range Pattern',
     attribute: 'PER',
     reqKarma: false,
     action: true,
@@ -4393,7 +4402,7 @@ export const threadMastery: ShortTalent = {
 };
 
 export const threadWeavingSpecial: ShortTalent = {
-    name: 'Thread Weaving*',
+    name: 'Thread Weaving',
     attribute: 'PER',
     reqKarma: false,
     action: true,
