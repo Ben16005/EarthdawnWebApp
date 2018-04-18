@@ -2,13 +2,13 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { airSailing, avoidBlow, battleShout, fireblood, meleeWeapons, 
-    greatLeap, shieldCharge, unarmedCombat, windCatcher, swiftKick, 
-    threadWeavingSpecial, battleBellow, haggle, momentumAttack, 
-    steelyStare, speakLanguage, throwingWeapons, crushingBlow, 
-    missileWeapons, endureCold, lionHeart, secondAttack, shieldBeater, 
-    thunderAxe, defense, weaponBreaker, criticalHit, vitality, 
-    matrixStrike, quickBlade, howl, quickShot, screamingArrow, 
+import { airSailing, avoidBlow, battleShout, fireblood, meleeWeapons,
+    greatLeap, shieldCharge, unarmedCombat, windCatcher, swiftKick,
+    threadWeavingSpecial, battleBellow, haggle, momentumAttack,
+    steelyStare, speakLanguage, throwingWeapons, crushingBlow,
+    missileWeapons, endureCold, lionHeart, secondAttack, shieldBeater,
+    thunderAxe, defense, weaponBreaker, criticalHit, vitality,
+    matrixStrike, quickBlade, howl, quickShot, screamingArrow,
     stoneSkin} from '../library/disciplineTalents';
 
 
@@ -22,7 +22,7 @@ export const skyRaider: Discipline = {
         new Talent(fireblood, 1, true),
         karmaRitual,
         new Talent(meleeWeapons, 1, true),
-        durability,  
+        durability,
         new Talent(greatLeap, 2, true),
         new Talent(shieldCharge, 2, true),
         new Talent(unarmedCombat, 3, false),
@@ -35,7 +35,7 @@ export const skyRaider: Discipline = {
         new Talent(steelyStare, 6, true),
         new Talent(speakLanguage, 7, false),
         new Talent(throwingWeapons, 7, false),
-        new Talent(crushingBlow, 8, true),  
+        new Talent(crushingBlow, 8, true),
         new Talent(missileWeapons, 8, false),
         new Talent(endureCold, 9, true),
         new Talent(lionHeart, 9, true),
@@ -48,7 +48,7 @@ export const skyRaider: Discipline = {
         new Talent(vitality, 12, false),
         new Talent(matrixStrike, 13, false),
         new Talent(quickBlade, 13, false),
-        new Talent(howl, 14, false),  
+        new Talent(howl, 14, false),
         new Talent(quickShot, 14, false),
         new Talent(screamingArrow, 15, false),
         new Talent(stoneSkin, 15, true)

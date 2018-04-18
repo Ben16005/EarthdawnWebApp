@@ -2,12 +2,12 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { avoidBlow, climbing, meleeWeapons, pilotBoat, swimming, 
-    castNet, throwingWeapons, haggle, woundBalance, threadWeavingSpecial, 
-    unarmedCombat, acrobaticStrike, evaluate, engagingBanter, speakLanguage, 
-    hearteningLaugh, secondWeapon, greatLeap, missileWeapons, disarm, lionHeart, 
-    secondAttack, detectFalsehood, swingAttack, defense, shieldBeater, 
-    criticalHit, lifeCheck, secondChance, whirlwind, matrixStrike, quickBlade, 
+import { avoidBlow, climbing, meleeWeapons, pilotBoat, swimming,
+    castNet, throwingWeapons, haggle, woundBalance, threadWeavingSpecial,
+    unarmedCombat, acrobaticStrike, evaluate, engagingBanter, speakLanguage,
+    hearteningLaugh, secondWeapon, greatLeap, missileWeapons, disarm, lionHeart,
+    secondAttack, detectFalsehood, swingAttack, defense, shieldBeater,
+    criticalHit, lifeCheck, secondChance, whirlwind, matrixStrike, quickBlade,
     quickShot, vitality} from '../library/disciplineTalents';
 
 
@@ -21,7 +21,7 @@ export const boatman: Discipline = {
         new Talent(meleeWeapons, 1, true),
         new Talent(pilotBoat, 1, true),
         new Talent(swimming, 1, true),
-        new Talent(castNet, 2, true),  
+        new Talent(castNet, 2, true),
         durability,
         new Talent(throwingWeapons, 2, false),
         new Talent(haggle, 3, true),
@@ -34,7 +34,7 @@ export const boatman: Discipline = {
         new Talent(speakLanguage, 6, false),
         new Talent(hearteningLaugh, 7, false),
         new Talent(secondWeapon, 7, true),
-        new Talent(greatLeap, 8, false),  
+        new Talent(greatLeap, 8, false),
         new Talent(missileWeapons, 8, false),
         new Talent(disarm, 9, false),
         new Talent(lionHeart, 9, true),
@@ -47,9 +47,9 @@ export const boatman: Discipline = {
         new Talent(lifeCheck, 12, true),
         new Talent(secondChance, 13, true),
         new Talent(whirlwind, 13, false),
-        new Talent(matrixStrike, 14, false),  
+        new Talent(matrixStrike, 14, false),
         new Talent(quickBlade, 14, false),
         new Talent(quickShot, 15, false),
         new Talent(vitality, 15, true)
-	]
+    ]
 };

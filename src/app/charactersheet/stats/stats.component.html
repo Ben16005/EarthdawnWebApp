@@ -2,9 +2,9 @@
     <div class="flex-stretch">
         <div *ngFor="let stat of characterStats" class="ed-card w3-card">
             <div *ngIf="editMode">
-                <i *ngIf="editMode" (click)="increaseTalent(talent)" class="glyphicon glyphicon-menu-up"></i>
+                <i *ngIf="editMode" (click)="increaseStat(talent)" class="glyphicon glyphicon-menu-up"></i>
                 <div *ngIf="editMode">{{ stat.base }}</div>
-                <i *ngIf="editMode" (click)="decreaseTalent(talent)" class="glyphicon glyphicon-menu-down"></i>
+                <i *ngIf="editMode" (click)="decreaseStat(talent)" class="glyphicon glyphicon-menu-down"></i>
             </div>
             <div data-toggle="modal" data-target="#ed-stats-modal">{{ stat.name }}</div>
             <div>

@@ -2,14 +2,14 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { evidenceAnalysis, itemHistory, readandWriteLanguage, 
-    research, speakLanguage, bookMemory, meleeWeapons, astralSight, 
-    search, avoidBlow, threadWeavingSpecial, arcaneMutterings, 
-    firstImpression, engagingBanter, gracefulExit, lionHeart, 
-    lipReading, creatureAnalysis, lastingImpression, diplomacy, 
-    hypnotize, resistTaunt, detectFalsehood, trueSight, lionSpirit, 
-    truthSkit, bardicVoice, safePath, mindWave, safeThought, 
-    detectInfluence, secondChance, multiTongue, 
+import { evidenceAnalysis, itemHistory, readandWriteLanguage,
+    research, speakLanguage, bookMemory, meleeWeapons, astralSight,
+    search, avoidBlow, threadWeavingSpecial, arcaneMutterings,
+    firstImpression, engagingBanter, gracefulExit, lionHeart,
+    lipReading, creatureAnalysis, lastingImpression, diplomacy,
+    hypnotize, resistTaunt, detectFalsehood, trueSight, lionSpirit,
+    truthSkit, bardicVoice, safePath, mindWave, safeThought,
+    detectInfluence, secondChance, multiTongue,
     vitality} from '../library/disciplineTalents';
 
 
@@ -23,7 +23,7 @@ export const traveledScholar: Discipline = {
         new Talent(readandWriteLanguage, 1, true),
         new Talent(research, 1, true),
         new Talent(speakLanguage, 1, true),
-        new Talent(bookMemory, 2, true),  
+        new Talent(bookMemory, 2, true),
         durability,
         new Talent(meleeWeapons, 2, false),
         new Talent(astralSight, 3, false),
@@ -36,7 +36,7 @@ export const traveledScholar: Discipline = {
         new Talent(gracefulExit, 6, true),
         new Talent(lionHeart, 7, false),
         new Talent(lipReading, 7, true),
-        new Talent(creatureAnalysis, 8, false),  
+        new Talent(creatureAnalysis, 8, false),
         new Talent(lastingImpression, 8, true),
         new Talent(diplomacy, 9, false),
         new Talent(hypnotize, 9, true),
@@ -49,7 +49,7 @@ export const traveledScholar: Discipline = {
         new Talent(safePath, 12, true),
         new Talent(mindWave, 13, true),
         new Talent(safeThought, 13, true),
-        new Talent(detectInfluence, 14, true),  
+        new Talent(detectInfluence, 14, true),
         new Talent(secondChance, 14, false),
         new Talent(multiTongue, 15, true),
         new Talent(vitality, 15, false)

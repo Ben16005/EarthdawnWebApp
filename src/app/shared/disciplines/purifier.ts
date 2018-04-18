@@ -2,14 +2,14 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { avoidBlow, battleShout, bodyControl, unarmedCombat, 
-    unshakableEarth, creatureAnalysis, lifeSight, claySkin, 
-    earthBond, elementalTongues, threadWeavingSpecial, steelThought, 
-    swiftKick, lifeCheck, tigerSpring, earthSkin, secondAttack, 
-    crushingBlow, lionHeart, battleBellow, matrixStrike, 
-    spiritStrike, bestialToughness, plantShelter, spotArmorFlaw, 
-    vitality, bestialResilience, earthArmor, safePath, stoneSkin, 
-    secondChance, vitalStrike, auraArmor, 
+import { avoidBlow, battleShout, bodyControl, unarmedCombat,
+    unshakableEarth, creatureAnalysis, lifeSight, claySkin,
+    earthBond, elementalTongues, threadWeavingSpecial, steelThought,
+    swiftKick, lifeCheck, tigerSpring, earthSkin, secondAttack,
+    crushingBlow, lionHeart, battleBellow, matrixStrike,
+    spiritStrike, bestialToughness, plantShelter, spotArmorFlaw,
+    vitality, bestialResilience, earthArmor, safePath, stoneSkin,
+    secondChance, vitalStrike, auraArmor,
     whirlwind} from '../library/disciplineTalents';
 
 
@@ -23,7 +23,7 @@ export const purifier: Discipline = {
         karmaRitual,
         new Talent(unarmedCombat, 1, true),
         new Talent(unshakableEarth, 1, true),
-        new Talent(creatureAnalysis, 2, true),  
+        new Talent(creatureAnalysis, 2, true),
         durability,
         new Talent(lifeSight, 2, true),
         new Talent(claySkin, 3, true),
@@ -36,7 +36,7 @@ export const purifier: Discipline = {
         new Talent(tigerSpring, 6, false),
         new Talent(earthSkin, 7, false),
         new Talent(secondAttack, 7, true),
-        new Talent(crushingBlow, 8, true),  
+        new Talent(crushingBlow, 8, true),
         new Talent(lionHeart, 8, true),
         new Talent(battleBellow, 9, false),
         new Talent(matrixStrike, 9, false),
@@ -49,7 +49,7 @@ export const purifier: Discipline = {
         new Talent(earthArmor, 12, true),
         new Talent(safePath, 13, true),
         new Talent(stoneSkin, 13, true),
-        new Talent(secondChance, 14, false),  
+        new Talent(secondChance, 14, false),
         new Talent(vitalStrike, 14, false),
         new Talent(auraArmor, 15, false),
         new Talent(whirlwind, 15, false)

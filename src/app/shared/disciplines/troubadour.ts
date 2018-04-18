@@ -2,14 +2,14 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { disguiseSelf, emotionSong, firstImpression, meleeWeapons, 
-    mimicVoice, itemHistory, speakLanguage, empathicSense, 
-    readandWriteLanguage, taunt, threadWeavingSpecial, engagingBanter, 
-    throwingWeapons, haggle, resistTaunt, inciteMob, missileWeapons, 
-    gracefulExit, hypnotize, bardicVoice, bladeJuggle, trueSight, 
-    multiTongue, sloughBlame, impressiveShot, songofDeflection, 
-    thoughtLink, truthSkit, bloodGuiltWeapon, detectInfluence, 
-    lifeCheck, spiritTalk, auraArmor, 
+import { disguiseSelf, emotionSong, firstImpression, meleeWeapons,
+    mimicVoice, itemHistory, speakLanguage, empathicSense,
+    readandWriteLanguage, taunt, threadWeavingSpecial, engagingBanter,
+    throwingWeapons, haggle, resistTaunt, inciteMob, missileWeapons,
+    gracefulExit, hypnotize, bardicVoice, bladeJuggle, trueSight,
+    multiTongue, sloughBlame, impressiveShot, songofDeflection,
+    thoughtLink, truthSkit, bloodGuiltWeapon, detectInfluence,
+    lifeCheck, spiritTalk, auraArmor,
     confrontHorror} from '../library/disciplineTalents';
 
 
@@ -23,7 +23,7 @@ export const troubadour: Discipline = {
         karmaRitual,
         new Talent(meleeWeapons, 1, false),
         new Talent(mimicVoice, 1, true),
-        durability,  
+        durability,
         new Talent(itemHistory, 2, false),
         new Talent(speakLanguage, 2, true),
         new Talent(empathicSense, 3, true),
@@ -36,7 +36,7 @@ export const troubadour: Discipline = {
         new Talent(resistTaunt, 6, true),
         new Talent(inciteMob, 7, true),
         new Talent(missileWeapons, 7, false),
-        new Talent(gracefulExit, 8, false),  
+        new Talent(gracefulExit, 8, false),
         new Talent(hypnotize, 8, false),
         new Talent(bardicVoice, 9, true),
         new Talent(bladeJuggle, 9, false),
@@ -49,7 +49,7 @@ export const troubadour: Discipline = {
         new Talent(truthSkit, 12, true),
         new Talent(bloodGuiltWeapon, 13, false),
         new Talent(detectInfluence, 13, true),
-        new Talent(lifeCheck, 14, false),  
+        new Talent(lifeCheck, 14, false),
         new Talent(spiritTalk, 14, false),
         new Talent(auraArmor, 15, false),
         new Talent(confrontHorror, 15, false)

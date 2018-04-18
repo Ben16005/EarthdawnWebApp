@@ -11,6 +11,7 @@ import { WelcomeComponent } from './home/welcome.component';
 import { CharacterSheetComponent } from './charactersheet/charactersheet.component';
 import { StatsComponent } from './charactersheet/stats/stats.component';
 import { TalentsComponent } from './charactersheet/talents/talents.component';
+import { SpellsComponent } from './charactersheet/spells/spells.component';
 import { AsideLeftComponent } from './aside-left/asideleft.component';
 import { PrintSheetComponent } from './printsheet/printsheet.component';
 import { FormsModule } from '@angular/forms';
@@ -40,6 +41,7 @@ const routes = [
     CharacterSheetComponent,
     StatsComponent,
     TalentsComponent,
+    SpellsComponent,
     AsideLeftComponent,
     PrintSheetComponent
   ],

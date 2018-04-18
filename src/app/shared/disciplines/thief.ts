@@ -2,13 +2,13 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { climbing, lockPicking, throwingWeapons, pickingPockets, 
-    silentWalk, lockSense, surpriseStrike, avoidBlow, haggle, 
-    threadWeavingSpecial, trapInitiative, detectTrap, disarmTrap, 
-    disguiseSelf, fastHand, detectWeapon, meleeWeapons, missileWeapons, 
-    sloughBlame, concealWeapon, goldSense, sprint, astralPocket, 
-    speakLanguage, lipReading, woundBalance, quickBlade, sensePoison, 
-    chameleon, warningShot, bankShot, defense, gainSurprise, 
+import { climbing, lockPicking, throwingWeapons, pickingPockets,
+    silentWalk, lockSense, surpriseStrike, avoidBlow, haggle,
+    threadWeavingSpecial, trapInitiative, detectTrap, disarmTrap,
+    disguiseSelf, fastHand, detectWeapon, meleeWeapons, missileWeapons,
+    sloughBlame, concealWeapon, goldSense, sprint, astralPocket,
+    speakLanguage, lipReading, woundBalance, quickBlade, sensePoison,
+    chameleon, warningShot, bankShot, defense, gainSurprise,
     trueSight} from '../library/disciplineTalents';
 
 
@@ -22,7 +22,7 @@ export const thief: Discipline = {
         new Talent(throwingWeapons, 1, true),
         new Talent(pickingPockets, 1, true),
         new Talent(silentWalk, 1, true),
-        durability,  
+        durability,
         new Talent(lockSense, 2, true),
         new Talent(surpriseStrike, 2, true),
         new Talent(avoidBlow, 3, true),
@@ -35,7 +35,7 @@ export const thief: Discipline = {
         new Talent(fastHand, 6, true),
         new Talent(detectWeapon, 7, false),
         new Talent(meleeWeapons, 7, true),
-        new Talent(missileWeapons, 8, false),  
+        new Talent(missileWeapons, 8, false),
         new Talent(sloughBlame, 8, false),
         new Talent(concealWeapon, 9, true),
         new Talent(goldSense, 9, false),
@@ -48,7 +48,7 @@ export const thief: Discipline = {
         new Talent(sensePoison, 12, true),
         new Talent(chameleon, 13, false),
         new Talent(warningShot, 13, false),
-        new Talent(bankShot, 14, false),  
+        new Talent(bankShot, 14, false),
         new Talent(defense, 14, false),
         new Talent(gainSurprise, 15, true),
         new Talent(trueSight, 15, false)

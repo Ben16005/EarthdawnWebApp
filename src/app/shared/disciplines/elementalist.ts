@@ -2,12 +2,12 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { readandWriteElementalism, spellcasting, spellMatrix_Elementalist, 
-    threadWeavingSpecial, fireHeal, airSpeaking, elementalTongues, astralSight, 
-    elementalHold, summon, coldPurify, willforce, enhancedMatrix_Elementalist, 
-    unshakableEarth, temperature, armoredMatrix_Elementalist, metalWard, 
-    safePath, plantShelter, reshapeObject, animateObject, summoningCircle, 
-    bargainwithSummoned, movingEarth, waterDancing, earthArmor, 
+import { readandWriteElementalism, spellcasting, spellMatrix_Elementalist,
+    threadWeavingSpecial, fireHeal, airSpeaking, elementalTongues, astralSight,
+    elementalHold, summon, coldPurify, willforce, enhancedMatrix_Elementalist,
+    unshakableEarth, temperature, armoredMatrix_Elementalist, metalWard,
+    safePath, plantShelter, reshapeObject, animateObject, summoningCircle,
+    bargainwithSummoned, movingEarth, waterDancing, earthArmor,
     sharedMatrix_Elementalist, holdThread, } from '../library/disciplineTalents';
 
 
@@ -21,7 +21,7 @@ export const elementalist: Discipline = {
         new Talent(spellMatrix_Elementalist, 1, false),
         new Talent(spellMatrix_Elementalist, 1, false),
         new Talent(threadWeavingSpecial, 1, true),
-        durability,  
+        durability,
         new Talent(fireHeal, 2, true),
         new Talent(spellMatrix_Elementalist, 2, false),
         new Talent(airSpeaking, 3, true),
@@ -34,7 +34,7 @@ export const elementalist: Discipline = {
         new Talent(willforce, 6, false),
         new Talent(enhancedMatrix_Elementalist, 7, false),
         new Talent(unshakableEarth, 7, false),
-        new Talent(enhancedMatrix_Elementalist, 8, false),  
+        new Talent(enhancedMatrix_Elementalist, 8, false),
         new Talent(temperature, 8, true),
         new Talent(armoredMatrix_Elementalist, 9, false),
         new Talent(metalWard, 9, true),
@@ -47,9 +47,9 @@ export const elementalist: Discipline = {
         new Talent(bargainwithSummoned, 12, true),
         new Talent(movingEarth, 13, true),
         new Talent(waterDancing, 13, true),
-        new Talent(earthArmor, 14, true),  
+        new Talent(earthArmor, 14, true),
         new Talent(sharedMatrix_Elementalist, 14, false),
         new Talent(holdThread, 15, false),
         new Talent(sharedMatrix_Elementalist, 15, false)
-	]
+    ]
 };

@@ -2,13 +2,13 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { acrobaticStrike, meleeWeapons, swimming, taunt, 
-    unarmedCombat, avoidBlow, throwingWeapons, airDance, tailDance, 
-    threadWeavingSpecial, woundBalance, engagingDance, maneuver, 
-    lizardLeap, swiftKick, lifeCheck, secondWeapon, disarm, 
-    resistTaunt, eagleEye, impressiveStrike, lionHeart, bodyBlade, 
-    whirlwind, quickBlade, shieldBeater, bladeJuggle, defense, 
-    championChallenge, spiritStrike, matrixStrike, multiStrike, 
+import { acrobaticStrike, meleeWeapons, swimming, taunt,
+    unarmedCombat, avoidBlow, throwingWeapons, airDance, tailDance,
+    threadWeavingSpecial, woundBalance, engagingDance, maneuver,
+    lizardLeap, swiftKick, lifeCheck, secondWeapon, disarm,
+    resistTaunt, eagleEye, impressiveStrike, lionHeart, bodyBlade,
+    whirlwind, quickBlade, shieldBeater, bladeJuggle, defense,
+    championChallenge, spiritStrike, matrixStrike, multiStrike,
     secondChance, vitalStrike} from '../library/disciplineTalents';
 
 
@@ -22,7 +22,7 @@ export const tailDancer: Discipline = {
         new Talent(swimming, 1, true),
         new Talent(taunt, 1, false),
         new Talent(unarmedCombat, 1, true),
-        new Talent(avoidBlow, 2, false),  
+        new Talent(avoidBlow, 2, false),
         durability,
         new Talent(throwingWeapons, 2, false),
         new Talent(airDance, 3, false),
@@ -35,7 +35,7 @@ export const tailDancer: Discipline = {
         new Talent(swiftKick, 6, false),
         new Talent(lifeCheck, 7, false),
         new Talent(secondWeapon, 7, true),
-        new Talent(disarm, 8, true),  
+        new Talent(disarm, 8, true),
         new Talent(resistTaunt, 8, false),
         new Talent(eagleEye, 9, false),
         new Talent(impressiveStrike, 9, true),
@@ -48,7 +48,7 @@ export const tailDancer: Discipline = {
         new Talent(defense, 12, true),
         new Talent(championChallenge, 13, true),
         new Talent(spiritStrike, 13, false),
-        new Talent(matrixStrike, 14, false),  
+        new Talent(matrixStrike, 14, false),
         new Talent(multiStrike, 14, true),
         new Talent(secondChance, 15, false),
         new Talent(vitalStrike, 15, true)

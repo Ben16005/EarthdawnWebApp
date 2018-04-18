@@ -2,14 +2,14 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { airDance, avoidBlow, evidenceAnalysis, missileWeapons, 
-    tracking, meleeWeapons, search, creatureAnalysis, surpriseStrike, 
-    scentIdentifier, threadWeavingSpecial, animalPossession, 
-    trapInitiative, eagleEye, speakLanguage, anticipateBlow, 
-    endureCold, birdSong, spotArmorFlaw, bestialResilience, 
-    senseDanger, trueSight, chameleon, traceMissile, missileTwister, 
-    safePath, defense, lionSpirit, blindFire, echoLocation, 
-    detectInfluence, secondChance, gainSurprise, 
+import { airDance, avoidBlow, evidenceAnalysis, missileWeapons,
+    tracking, meleeWeapons, search, creatureAnalysis, surpriseStrike,
+    scentIdentifier, threadWeavingSpecial, animalPossession,
+    trapInitiative, eagleEye, speakLanguage, anticipateBlow,
+    endureCold, birdSong, spotArmorFlaw, bestialResilience,
+    senseDanger, trueSight, chameleon, traceMissile, missileTwister,
+    safePath, defense, lionSpirit, blindFire, echoLocation,
+    detectInfluence, secondChance, gainSurprise,
     multiShot} from '../library/disciplineTalents';
 
 
@@ -23,7 +23,7 @@ export const windscout: Discipline = {
         karmaRitual,
         new Talent(missileWeapons, 1, false),
         new Talent(tracking, 1, true),
-        durability,  
+        durability,
         new Talent(meleeWeapons, 2, false),
         new Talent(search, 2, true),
         new Talent(creatureAnalysis, 3, true),
@@ -36,7 +36,7 @@ export const windscout: Discipline = {
         new Talent(speakLanguage, 6, true),
         new Talent(anticipateBlow, 7, true),
         new Talent(endureCold, 7, true),
-        new Talent(birdSong, 8, true),  
+        new Talent(birdSong, 8, true),
         new Talent(spotArmorFlaw, 8, false),
         new Talent(bestialResilience, 9, false),
         new Talent(senseDanger, 9, true),
@@ -49,7 +49,7 @@ export const windscout: Discipline = {
         new Talent(lionSpirit, 12, false),
         new Talent(blindFire, 13, false),
         new Talent(echoLocation, 13, true),
-        new Talent(detectInfluence, 14, false),  
+        new Talent(detectInfluence, 14, false),
         new Talent(secondChance, 14, true),
         new Talent(gainSurprise, 15, true),
         new Talent(multiShot, 15, false)

@@ -2,14 +2,14 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { avoidBlow, climbing, meleeWeapons, silentWalk, tracking, 
-    maneuver, readandWriteLanguage, astralSight, sprint, riposte, 
-    threadWeavingSpecial, lockSense, trapInitiative, greatLeap, 
-    speakLanguage, detectTrap, endureCold, glidingStride, 
-    missileWeapons, anticipateBlow, creatureAnalysis, detectWeapon, 
-    missileTwister, traceMissile, disguiseSelf, woundBalance, 
-    defense, quickBlade, safePath, sensePoison, secondChance, 
-    poisonResistance, echoLocation, 
+import { avoidBlow, climbing, meleeWeapons, silentWalk, tracking,
+    maneuver, readandWriteLanguage, astralSight, sprint, riposte,
+    threadWeavingSpecial, lockSense, trapInitiative, greatLeap,
+    speakLanguage, detectTrap, endureCold, glidingStride,
+    missileWeapons, anticipateBlow, creatureAnalysis, detectWeapon,
+    missileTwister, traceMissile, disguiseSelf, woundBalance,
+    defense, quickBlade, safePath, sensePoison, secondChance,
+    poisonResistance, echoLocation,
     etherealWeapon} from '../library/disciplineTalents';
 
 
@@ -23,7 +23,7 @@ export const scout: Discipline = {
         new Talent(meleeWeapons, 1, false),
         new Talent(silentWalk, 1, true),
         new Talent(tracking, 1, true),
-        durability,  
+        durability,
         new Talent(maneuver, 2, false),
         new Talent(readandWriteLanguage, 2, false),
         new Talent(astralSight, 3, true),
@@ -36,7 +36,7 @@ export const scout: Discipline = {
         new Talent(speakLanguage, 6, false),
         new Talent(detectTrap, 7, true),
         new Talent(endureCold, 7, true),
-        new Talent(glidingStride, 8, true),  
+        new Talent(glidingStride, 8, true),
         new Talent(missileWeapons, 8, false),
         new Talent(anticipateBlow, 9, false),
         new Talent(creatureAnalysis, 9, true),
@@ -49,7 +49,7 @@ export const scout: Discipline = {
         new Talent(quickBlade, 12, false),
         new Talent(safePath, 13, true),
         new Talent(sensePoison, 13, true),
-        new Talent(secondChance, 14, false),  
+        new Talent(secondChance, 14, false),
         new Talent(poisonResistance, 14, true),
         new Talent(echoLocation, 15, true),
         new Talent(etherealWeapon, 15, false)

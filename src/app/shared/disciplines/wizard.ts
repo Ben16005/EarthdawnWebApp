@@ -2,13 +2,13 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { readandWriteWizardry, spellcasting, spellMatrix_Wizardry, 
-    threadWeavingSpecial, evidenceAnalysis, arcaneMutterings, 
-    readandWriteLanguage, astralSight, bookMemory, lipReading, 
-    willforce, enhancedMatrix_Wizardry, speakLanguage, holdThread, 
-    itemHistory, resistTaunt, armoredMatrix_Wizardry, matrixStrike, 
-    rangePattern, lifeCheck, spiritStrike, castingPattern, 
-    woundTransfer, sharedMatrix_Wizardry, trueSight, multiWeaving, 
+import { readandWriteWizardry, spellcasting, spellMatrix_Wizardry,
+    threadWeavingSpecial, evidenceAnalysis, arcaneMutterings,
+    readandWriteLanguage, astralSight, bookMemory, lipReading,
+    willforce, enhancedMatrix_Wizardry, speakLanguage, holdThread,
+    itemHistory, resistTaunt, armoredMatrix_Wizardry, matrixStrike,
+    rangePattern, lifeCheck, spiritStrike, castingPattern,
+    woundTransfer, sharedMatrix_Wizardry, trueSight, multiWeaving,
     effectPattern, } from '../library/disciplineTalents';
 
 
@@ -22,7 +22,7 @@ export const wizard: Discipline = {
         new Talent(spellMatrix_Wizardry, 1, false),
         new Talent(spellMatrix_Wizardry, 1, false),
         new Talent(threadWeavingSpecial, 1, true),
-        durability,  
+        durability,
         new Talent(evidenceAnalysis, 2, true),
         new Talent(spellMatrix_Wizardry, 2, false),
         new Talent(arcaneMutterings, 3, true),
@@ -35,7 +35,7 @@ export const wizard: Discipline = {
         new Talent(speakLanguage, 6, true),
         new Talent(holdThread, 7, true),
         new Talent(itemHistory, 7, true),
-        new Talent(enhancedMatrix_Wizardry, 8, false),  
+        new Talent(enhancedMatrix_Wizardry, 8, false),
         new Talent(resistTaunt, 8, false),
         new Talent(armoredMatrix_Wizardry, 9, false),
         new Talent(matrixStrike, 9, true),
@@ -48,7 +48,7 @@ export const wizard: Discipline = {
         new Talent(woundTransfer, 12, true),
         new Talent(sharedMatrix_Wizardry, 13, false),
         new Talent(trueSight, 13, false),
-        new Talent(multiWeaving, 14, true),  
+        new Talent(multiWeaving, 14, true),
         new Talent(sharedMatrix_Wizardry, 14, false),
         new Talent(effectPattern, 15, true),
         new Talent(sharedMatrix_Wizardry, 15, false)

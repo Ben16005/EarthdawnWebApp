@@ -3,12 +3,12 @@ import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
 import { readandWriteIllusionism, spellcasting, spellMatrix_Illusionist,
-    threadWeavingSpecial, disguiseSelf, deadFall, speakLanguage, 
-    falseSight,sloughBlame, willforce, astralSight, fastHand, 
-    engagingBanter, enhancedMatrix_Illusionist,trueSight, 
-    armoredMatrix_Illusionist, detectFalsehood, resistTaunt, 
-    memorizeImage, mindWave, hypnotize, safeThought, thoughtfulExpression, 
-    matrixStrike, sharedMatrix_Illusionist,multiWeaving, 
+    threadWeavingSpecial, disguiseSelf, deadFall, speakLanguage,
+    falseSight, sloughBlame, willforce, astralSight, fastHand,
+    engagingBanter, enhancedMatrix_Illusionist, trueSight,
+    armoredMatrix_Illusionist, detectFalsehood, resistTaunt,
+    memorizeImage, mindWave, hypnotize, safeThought, thoughtfulExpression,
+    matrixStrike, sharedMatrix_Illusionist, multiWeaving,
     secondChance } from '../library/disciplineTalents';
 
 

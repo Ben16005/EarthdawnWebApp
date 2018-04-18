@@ -2,13 +2,13 @@ import { Discipline } from '../../models/discipline';
 import { Talent } from '../../models/talent';
 import { karmaRitual, durability } from '../library/staticTalents';
 
-import { animalBond, clawShape, dominateBeast, tracking, 
-    unarmedCombat, animalTraining, creatureAnalysis, catsPaw, 
-    lizardLeap, frightenAnimals, threadWeavingSpecial, borrowSense, 
-    healAnimalServant, endureCold, inciteStampede, clawFrenzy, sensePoison, 
-    lionHeart, poisonResistance, animalPossession, bestialToughness, howl, 
-    animalLeadership, lionSpirit, developAnimalSense, tameMount, 
-    bestialResilience, chameleon, secondChance, trample, echoLocation, 
+import { animalBond, clawShape, dominateBeast, tracking,
+    unarmedCombat, animalTraining, creatureAnalysis, catsPaw,
+    lizardLeap, frightenAnimals, threadWeavingSpecial, borrowSense,
+    healAnimalServant, endureCold, inciteStampede, clawFrenzy, sensePoison,
+    lionHeart, poisonResistance, animalPossession, bestialToughness, howl,
+    animalLeadership, lionSpirit, developAnimalSense, tameMount,
+    bestialResilience, chameleon, secondChance, trample, echoLocation,
     spiritStrike, astralWeb, venom} from '../library/disciplineTalents';
 
 
@@ -22,7 +22,7 @@ export const beastmaster: Discipline = {
         karmaRitual,
         new Talent(tracking, 1, false),
         new Talent(unarmedCombat, 1, false),
-        new Talent(animalTraining, 2, true),  
+        new Talent(animalTraining, 2, true),
         new Talent(creatureAnalysis, 2, true),
         durability,
         new Talent(catsPaw, 3, true),
@@ -35,7 +35,7 @@ export const beastmaster: Discipline = {
         new Talent(inciteStampede, 6, true),
         new Talent(clawFrenzy, 7, true),
         new Talent(sensePoison, 7, false),
-        new Talent(lionHeart, 8, true),  
+        new Talent(lionHeart, 8, true),
         new Talent(poisonResistance, 8, false),
         new Talent(animalPossession, 9, false),
         new Talent(bestialToughness, 9, false),
@@ -48,9 +48,9 @@ export const beastmaster: Discipline = {
         new Talent(chameleon, 12, false),
         new Talent(secondChance, 13, false),
         new Talent(trample, 13, false),
-        new Talent(echoLocation, 14, true),  
+        new Talent(echoLocation, 14, true),
         new Talent(spiritStrike, 14, false),
         new Talent(astralWeb, 15, false),
         new Talent(venom, 15, true)
-	]
+    ]
 };
