@@ -1,1 +1,8 @@
-<ng-template ngbTabContent class="ed-content">Spells</ng-template>
+<div class="flex-container">
+    <div class="flex-stretch" *ngFor="let spell of spellList">
+        <div id="ed-discipline" class="ed-card w3-card">
+            <div>{{ spell.name }}</div>
+            <div>{{ spell.effect }}</div>
+        </div>
+    </div>
+</div>

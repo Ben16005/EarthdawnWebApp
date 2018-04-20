@@ -36,6 +36,8 @@ export class StatsComponent implements OnInit {
     new Stat('Recovery Tests', 13)
   ];
 
+  playerStats: Stat[][] = [this.characterStats, this.characterDefenses, this.characterOther ];
+
   constructor(private editService: EditModeService) {}
 
   editMode: boolean;
