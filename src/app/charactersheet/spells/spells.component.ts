@@ -9,7 +9,7 @@ import { Spells } from '../../models/spells';
 
   export class SpellsComponent {
     spellList: Spells[] =
-      [{ name: 'Fireball', description: 'Shoots a big ball of fire', effect: 'WILLPOWER + 5', circle: 1 },
-      { name: 'Lightning', description: 'Shoots a big bolt of lightning', effect: 'PERCEPTION + 5', circle: 1 }
+      [{ name: 'Fireball', description: 'Shoots a big ball of fire', effect: 'WILLPOWER + 5', discipline: 'Elementalist', circle: 5 },
+      { name: 'Lightning', description: 'Shoots a big bolt of lightning', effect: 'PERCEPTION + 5', discipline: 'Elementalist', circle: 4 }
     ];
   }
