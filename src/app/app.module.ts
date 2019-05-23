@@ -1,9 +1,10 @@
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 // Components
 import { AppComponent } from './app.component';
@@ -14,26 +15,25 @@ import { TalentsComponent } from './charactersheet/talents/talents.component';
 import { SpellsComponent } from './charactersheet/spells/spells.component';
 import { AsideLeftComponent } from './aside-left/asideleft.component';
 import { PrintSheetComponent } from './printsheet/printsheet.component';
-import { FormsModule } from '@angular/forms';
 
 // Services
 import { CharacterService } from './services/character.service';
 import { EditModeService } from './services/editmode.service';
 
-const routes = [
-  { path: 'charactersheet', component: CharacterSheetComponent },
-  { path: 'printsheet', component: PrintSheetComponent },
-  { path: 'welcome', component: WelcomeComponent },
-  { path: '', redirectTo: 'welcome', pathMatch: 'full' },
-];
+const routes: Routes = [];
+//   { path: 'charactersheet', component: CharacterSheetComponent },
+//   { path: 'printsheet', component: PrintSheetComponent },
+//   { path: 'welcome', component: WelcomeComponent },
+//   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+// ];
 
 @NgModule({
   imports: [
     BrowserModule,
-    HttpModule,
+    FormsModule,
+    HttpClientModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(routes),
-    FormsModule
+    RouterModule.forRoot(routes)
   ],
   declarations: [
     AppComponent,

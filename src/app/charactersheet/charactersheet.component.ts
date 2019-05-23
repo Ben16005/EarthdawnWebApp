@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Character } from '../models/character';
 import { Stat } from '../models/stat';
 import { EditModeService } from '../services/editmode.service';
 

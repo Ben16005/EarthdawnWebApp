@@ -1,6 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Character } from '../../models/character';
-import { Stat } from '../../models/stat';
 import { archer } from '../../shared/disciplines/archer';
 import { airSailor } from '../../shared/disciplines/airsailor';
 import { Discipline } from '../../models/discipline';
